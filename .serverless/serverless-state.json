@@ -14,10 +14,6 @@
           "Effect": "Allow",
           "Action": [
             "s3:Query",
-            "s3:GetItem",
-            "s3:PutItem",
-            "s3:UpdateItem",
-            "s3:DeleteItem",
             "s3:GetObject",
             "s3:PutObject"
           ],
@@ -192,7 +188,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/audit/dev/1612815350630-2021-02-08T20:15:50.630Z/audit.zip"
+                "S3Key": "serverless/audit/dev/1612863639354-2021-02-09T09:40:39.354Z/audit.zip"
               },
               "Handler": "wsgi_handler.handler",
               "Runtime": "python3.6",
@@ -210,14 +206,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersion5spDm5ldTHhlrZDzMvWgoSAHBQVbFdRsXF5wtwTw8": {
+          "AppLambdaVersion9gROmTNwPBqr55lA3lcS48Js6DHzoKoXDHS11tz8nA": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "cASLqExsP+pUD3LSiJxPH3J1I6NqNVs0woC6EUIn93Q="
+              "CodeSha256": "U+eqCDg4fd/Md3jv2nP9bdSIEDVMIj74sKcU7WN/Qjs="
             }
           },
           "ApiGatewayRestApi": {
@@ -336,7 +332,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1612815321272": {
+          "ApiGatewayDeployment1612863610965": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -396,7 +392,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersion5spDm5ldTHhlrZDzMvWgoSAHBQVbFdRsXF5wtwTw8"
+              "Ref": "AppLambdaVersion9gROmTNwPBqr55lA3lcS48Js6DHzoKoXDHS11tz8nA"
             }
           },
           "ServiceEndpoint": {
@@ -537,7 +533,7 @@
         "timeout": 6,
         "runtime": "python3.6",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersion5spDm5ldTHhlrZDzMvWgoSAHBQVbFdRsXF5wtwTw8"
+        "versionLogicalId": "AppLambdaVersion9gROmTNwPBqr55lA3lcS48Js6DHzoKoXDHS11tz8nA"
       }
     },
     "configValidationMode": "warn",
@@ -564,7 +560,7 @@
     "artifact": "C:\\Git\\AuditLogs\\.serverless\\audit.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/audit/dev/1612815350630-2021-02-08T20:15:50.630Z",
+    "artifactDirectoryName": "serverless/audit/dev/1612863639354-2021-02-09T09:40:39.354Z",
     "artifact": "audit.zip"
   }
 }

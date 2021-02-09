@@ -20,10 +20,6 @@ provider:
     - Effect: Allow
       Action:
         - s3:Query
-        - s3:GetItem
-        - s3:PutItem
-        - s3:UpdateItem
-        - s3:DeleteItem
         - s3:GetObject
         - s3:PutObject
       Resource:

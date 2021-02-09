@@ -8,5 +8,5 @@
         "*test.py"
     ],
     "python.unitTest.unittestEnabled": true,
-    "python.pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe"
+    "python.linting.pylintEnabled": false
 }

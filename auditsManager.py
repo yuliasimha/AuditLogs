@@ -1,10 +1,10 @@
 import json
-import fileUtils
 import boto3
 import jsonschema
-import requestHandler
-from validator import validator 
 from decouple import config
+import utils.requestHandler as requestHandler
+from utils.validator import validator as validator
+import utils.fileUtils as fileUtils
  
 class auditsManager:
 
