@@ -22,7 +22,7 @@ def search():
         if timeStart > timeEnd:
             raise Exception("Time start value must be larget than time end")
 
-        if len(searchValue) == 0 or "'" in searchValue:
+        if len(searchValue) == 0 or "'" in searchValue or searchValue == "%":
             raise Exception("Search value empty or contains illegal character")
 
     except Exception as e:

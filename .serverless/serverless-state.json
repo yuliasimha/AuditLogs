@@ -188,7 +188,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/audit/dev/1612863639354-2021-02-09T09:40:39.354Z/audit.zip"
+                "S3Key": "serverless/audit/dev/1612881512074-2021-02-09T14:38:32.074Z/audit.zip"
               },
               "Handler": "wsgi_handler.handler",
               "Runtime": "python3.6",
@@ -206,14 +206,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersion9gROmTNwPBqr55lA3lcS48Js6DHzoKoXDHS11tz8nA": {
+          "AppLambdaVersion0dtGJmBySxHkmT4XXaLmSHsanI9jWs2zP9XqWkCjf0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "U+eqCDg4fd/Md3jv2nP9bdSIEDVMIj74sKcU7WN/Qjs="
+              "CodeSha256": "kCuwTeUVy53WzH1bs/UQcdltENBxTANGexWJHmzSaYA="
             }
           },
           "ApiGatewayRestApi": {
@@ -332,7 +332,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1612863610965": {
+          "ApiGatewayDeployment1612881485904": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -392,7 +392,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersion9gROmTNwPBqr55lA3lcS48Js6DHzoKoXDHS11tz8nA"
+              "Ref": "AppLambdaVersion0dtGJmBySxHkmT4XXaLmSHsanI9jWs2zP9XqWkCjf0"
             }
           },
           "ServiceEndpoint": {
@@ -533,7 +533,7 @@
         "timeout": 6,
         "runtime": "python3.6",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersion9gROmTNwPBqr55lA3lcS48Js6DHzoKoXDHS11tz8nA"
+        "versionLogicalId": "AppLambdaVersion0dtGJmBySxHkmT4XXaLmSHsanI9jWs2zP9XqWkCjf0"
       }
     },
     "configValidationMode": "warn",
@@ -560,7 +560,7 @@
     "artifact": "C:\\Git\\AuditLogs\\.serverless\\audit.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/audit/dev/1612863639354-2021-02-09T09:40:39.354Z",
+    "artifactDirectoryName": "serverless/audit/dev/1612881512074-2021-02-09T14:38:32.074Z",
     "artifact": "audit.zip"
   }
 }
